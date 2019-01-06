@@ -85,3 +85,12 @@ button.accordion.is-open::after {
 button.accordion:hover, button.accordion.is-open  {
     background-color: aqua;
 }
+
+@media  and (min-width: 720px) {
+    h1 {
+        font-size: 15px;
+    }
+@media  and (min-width: 320px) {
+    h1 {
+        font-size: 10px;
+    }
