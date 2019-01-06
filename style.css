@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    max-width: auto;
+    margin: 50px auto;
+    font-family: B Nazanin;
+    font-weight: bolder;
+    direction: rtl;
+    padding-right: 10px;
+    text-align: justify;
+    float: center;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    color: purple;
+}
+
+.row > div.col1 > img {
+    float: left;
+    width: 50px;
+    height: 50px;    
+}
+
+.slide-img {
+    width: 100%;
+    height: 40px;
+    float: left
+}
+
+.row > div.col2 {
+    text-align: center;
+    font-family: B Yekan;
+    font-size: 22px;
+    font-style: bolder;
+    color: whitesmoke;
+    padding-top: 2px;
+}
+.top-row {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: aqua;
+    width: 100%;
+    height: 70px;
+}
+button.accordion {
+    width: 100%;
+    text-align: right;
+    border: none;
+    outline: none;
+    direction: rtl;
+    background-color: whitesmoke;
+    color: purple;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: B Yekan;
+    transition: background-color 0.3s linear;
+}
+
+button.accordion::after {
+    content: '\f055';
+    font-family: "fontawesome";
+    font-size: 14px;
+    float: left;
+}
+
+button.accordion.is-open::after {
+    content: '\f056';
+}
+
+.accordion-content {
+    font-size: 16px;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+button.accordion:hover, button.accordion.is-open  {
+    background-color: aqua;
+}
